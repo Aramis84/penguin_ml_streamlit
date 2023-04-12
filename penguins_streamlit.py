@@ -2,6 +2,11 @@ import streamlit as st
 import pickle
 import pandas as pd
 
+st.title("Penguin Classifier : A machine learning app")
+st.write("This app uses 6 inputs about physical attributes and geographical locations"
+         " to predict the species of penguion using a model built on the Palmer's Penguin's"
+          " dataset. Use the form below to get started...")
+
 with open("random_forest_penguin_model.pickle", "rb") as rf_pickle:
     model = pickle.load(rf_pickle)
 
