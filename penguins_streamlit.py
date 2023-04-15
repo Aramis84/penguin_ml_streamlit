@@ -7,9 +7,9 @@ st.write("This app uses 6 inputs about physical attributes and geographical loca
          " to predict the species of penguion using a model built on the Palmer's Penguin's"
           " dataset. Use the form below to get started...")
 
-password_guess = st.text_input("Enter password")
-if password_guess != st.secrets["password"]:
-    st.stop()
+# password_guess = st.text_input("Enter password")
+# if password_guess != st.secrets["password"]:
+#     st.stop()
 
 with open("random_forest_penguin_model.pickle", "rb") as rf_pickle:
     model = pickle.load(rf_pickle)
